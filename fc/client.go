@@ -13,12 +13,14 @@ type fullContactClient struct {
 	headers              map[string]string
 	httpClient           *http.Client
 	retryHandler         RetryHandler
+	baseUrl              string
 }
 
 func NewFullContactClient(options ...ClientOption) (*fullContactClient, error) {
 	c := &fullContactClient{
 		headers:              make(map[string]string),
 		connectTimeoutMillis: 0,
+		baseUrl:              defaultBaseUrl,
 	}
 
 	for _, opts := range options {
@@ -78,5 +80,11 @@ func WithRetryHandler(retryHandler RetryHandler) ClientOption {
 func WithHTTPClient(httpClient *http.Client) ClientOption {
 	return func(fc *fullContactClient) {
 		fc.httpClient = httpClient
+	}
+}
+
+func WithBaseUrl(baseUrl string) ClientOption {
+	return func(fc *fullContactClient) {
+		fc.baseUrl = baseUrl
 	}
 }

@@ -13,7 +13,7 @@ func (fcClient *fullContactClient) newHttpRequest(url string, reqBytes []byte) (
 	var method string
 	var buffer *bytes.Buffer
 
-	if isHttpGet(url) {
+	if fcClient.isHttpGet(url) {
 		method = "GET"
 		url = url + "?" + string(reqBytes)
 		buffer = nil
@@ -41,9 +41,9 @@ func (fcClient *fullContactClient) addHeaders(req *http.Request) *http.Request {
 	return req
 }
 
-func isHttpGet(url string) bool {
+func (fcClient *fullContactClient) isHttpGet(url string) bool {
 	// Add urls to below list for HTTP GET request
-	getUrlList := []string{audienceDownloadUrl}
+	getUrlList := []string{fcClient.baseUrl + audienceDownloadUrl}
 
 	for _, getUrl := range getUrlList {
 		if url == getUrl {
@@ -54,7 +54,7 @@ func isHttpGet(url string) bool {
 }
 
 func (fcClient *fullContactClient) do(url string, reqBytes []byte, ch chan *APIResponse) {
-	req, err := fcClient.newHttpRequest(url, reqBytes)
+	req, err := fcClient.newHttpRequest(fcClient.baseUrl+url, reqBytes)
 	if err != nil {
 		sendToChannel(ch, nil, url, err)
 	}
