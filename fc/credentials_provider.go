@@ -3,7 +3,7 @@ package fullcontact
 import "os"
 
 type CredentialsProvider interface {
-	getApiKey() string
+	GetApiKey() string
 }
 
 type StaticCredentialsProvider struct {
@@ -18,7 +18,7 @@ func NewStaticCredentialsProvider(apiKey string) (StaticCredentialsProvider, err
 	}
 }
 
-func (scp StaticCredentialsProvider) getApiKey() string {
+func (scp StaticCredentialsProvider) GetApiKey() string {
 	return scp.apiKey
 }
 
@@ -35,6 +35,6 @@ func NewDefaultCredentialsProvider(envVar string) (DefaultCredentialsProvider, e
 	}
 }
 
-func (dcp DefaultCredentialsProvider) getApiKey() string {
+func (dcp DefaultCredentialsProvider) GetApiKey() string {
 	return dcp.apiKey
 }
