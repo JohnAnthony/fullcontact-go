@@ -9,7 +9,7 @@ import (
 func TestNewStaticCredentialsProvider(t *testing.T) {
 	cp, err := NewStaticCredentialsProvider("apikey")
 	assert.NoError(t, err)
-	assert.Equal(t, "apikey", cp.getApiKey())
+	assert.Equal(t, "apikey", cp.GetApiKey())
 }
 
 func TestNewStaticCredentialsProviderWithEmptyKey(t *testing.T) {
@@ -23,7 +23,7 @@ func TestNewDefaultCredentialsProvider(t *testing.T) {
 	if err != nil {
 		cp, err := NewDefaultCredentialsProvider(FcApiKey)
 		assert.NoError(t, err)
-		assert.Equal(t, "apikey", cp.getApiKey())
+		assert.Equal(t, "apikey", cp.GetApiKey())
 	}
 }
 
