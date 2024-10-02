@@ -35,7 +35,7 @@ func (fcClient *fullContactClient) addHeaders(req *http.Request) *http.Request {
 	for k, v := range fcClient.headers {
 		req.Header.Add(k, v)
 	}
-	req.Header.Add("Authorization", "Bearer "+fcClient.credentialsProvider.getApiKey())
+	req.Header.Add("Authorization", "Bearer "+fcClient.credentialsProvider.GetApiKey())
 	req.Header.Add("Content-Type", "application/json")
 	req.Header.Add("User-Agent", userAgent)
 	return req
