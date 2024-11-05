@@ -40,7 +40,7 @@ func TestPersonEnrich(t *testing.T) {
 	assert.Equal(t, 42, response.Details.Age.Value)
 	assert.Equal(t, "Female", response.Details.Gender)
 	assert.Equal(t, 2, response.Details.Household.FamilyInfo.TotalAdults)
-	assert.Equal(t, 1, response.Details.Household.FamilyInfo.TotalChildren)
+	assert.Equal(t, "Less Than 3", response.Details.Household.FamilyInfo.NumberOfChildren)
 	assert.Equal(t, 3, response.Details.Household.FamilyInfo.TotalPeopleInHousehold)
 	assert.Equal(t, "Multi Family Dwelling/Apartment", response.Details.Household.HomeInfo.DwellingType)
 	assert.Equal(t, 513, response.Details.Household.HomeInfo.HomeValueEstimate)

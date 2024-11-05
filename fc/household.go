@@ -42,7 +42,7 @@ type LocationInfo struct {
 }
 
 type FamilyInfo struct {
-	TotalAdults            int `json:"totalAdults"`
-	TotalChildren          int `json:"totalChildren"`
-	TotalPeopleInHousehold int `json:"totalPeopleInHousehold"`
+	TotalAdults            int    `json:"totalAdults"`
+	NumberOfChildren       string `json:"numberOfChildren"`
+	TotalPeopleInHousehold int    `json:"totalPeopleInHousehold"`
 }

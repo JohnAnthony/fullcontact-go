@@ -25,7 +25,7 @@
     "household": {
       "familyInfo": {
         "totalAdults": 2,
-        "totalChildren": 1,
+        "numberOfChildren": "Less Than 3",
         "totalPeopleInHousehold": 3
       },
       "homeInfo": {
