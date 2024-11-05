@@ -31,7 +31,8 @@
       "homeInfo": {
         "dwellingType": "Multi Family Dwelling/Apartment",
         "homeValueEstimate": 513,
-        "loanToValueEstimate": 4
+        "loanToValueEstimate": 4,
+        "ownerOrRenter": "O"
       },
       "locationInfo": {
         "seasonalAddress": true,

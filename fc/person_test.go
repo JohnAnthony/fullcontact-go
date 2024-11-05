@@ -45,6 +45,7 @@ func TestPersonEnrich(t *testing.T) {
 	assert.Equal(t, "Multi Family Dwelling/Apartment", response.Details.Household.HomeInfo.DwellingType)
 	assert.Equal(t, 513, response.Details.Household.HomeInfo.HomeValueEstimate)
 	assert.Equal(t, 4, response.Details.Household.HomeInfo.LoanToValueEstimate)
+	assert.Equal(t, "O", response.Details.Household.HomeInfo.OwnerOrRenter)
 	assert.True(t, response.Details.Household.LocationInfo.SeasonalAddress)
 	assert.Equal(t, "PO Box", response.Details.Household.LocationInfo.CarrierRoute)
 	assert.Equal(t, "807", response.Details.Household.LocationInfo.DesignatedMarketArea)

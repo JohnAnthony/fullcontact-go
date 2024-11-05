@@ -13,6 +13,7 @@ type HomeInfo struct {
 	LoanToValueEstimate int    `json:"loanToValueEstimate"`
 	YearsInHome         int    `json:"yearsInHome"`
 	DwellingType        string `json:"dwellingType"`
+	OwnerOrRenter       string `json:"ownerOrRenter"`
 }
 
 type Presence struct {
