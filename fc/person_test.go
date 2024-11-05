@@ -55,7 +55,7 @@ func TestPersonEnrich(t *testing.T) {
 	assert.Equal(t, "Y", response.Details.Household.Presence.PresenceOfChildren)
 
 	// Finance
-	assert.Equal(t, "$30,000 - $39,999", response.Details.Household.Finance.Income)
+	assert.Equal(t, "$30,000 - $39,999", response.Details.Household.Finance.HouseholdIncomeEstimate)
 	assert.Equal(t, "$65,000 - $74,999", response.Details.Household.Finance.DiscretionarySpendingIncome)
 	assert.Equal(t, "5147", response.Details.Household.Finance.FirstMortgageAmountInThousands)
 	assert.Equal(t, "453", response.Details.Household.Finance.HomeMarketValueTaxRecord)

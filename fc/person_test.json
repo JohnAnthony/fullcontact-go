@@ -47,7 +47,7 @@
         "presenceOfChildren": "Y"
       },
       "finance" : {
-        "income" : "$30,000 - $39,999",
+        "householdIncomeEstimate" : "$30,000 - $39,999",
         "discretionarySpendingIncome" : "$65,000 - $74,999",
         "firstMortgageAmountInThousands" : "5147",
         "homeMarketValueTaxRecord" : "453",

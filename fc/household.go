@@ -21,7 +21,7 @@ type Presence struct {
 }
 
 type Finance struct {
-	Income                         string `json:"income"`
+	HouseholdIncomeEstimate        string `json:"householdIncomeEstimate"`
 	DiscretionarySpendingIncome    string `json:"discretionarySpendingIncome"`
 	FirstMortgageAmountInThousands string `json:"firstMortgageAmountInThousands"`
 	HomeMarketValueTaxRecord       string `json:"homeMarketValueTaxRecord"`
