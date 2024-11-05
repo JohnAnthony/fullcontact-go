@@ -50,6 +50,7 @@ type Demographics struct {
 	Occupation    string `json:"occupation"`
 	LivingStatus  string `json:"livingStatus"`
 	Age           Age    `json:"age"`
+	Language      string `json:"language"`
 }
 
 type Email struct {

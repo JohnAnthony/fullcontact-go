@@ -13,6 +13,7 @@ type HomeInfo struct {
 	LoanToValueEstimate int    `json:"loanToValueEstimate"`
 	YearsInHome         int    `json:"yearsInHome"`
 	DwellingType        string `json:"dwellingType"`
+	OwnerOrRenter       string `json:"ownerOrRenter"`
 }
 
 type Presence struct {
@@ -21,12 +22,12 @@ type Presence struct {
 }
 
 type Finance struct {
-	Income                         string `json:"income"`
+	HouseholdIncomeEstimate        string `json:"householdIncomeEstimate"`
 	DiscretionarySpendingIncome    string `json:"discretionarySpendingIncome"`
 	FirstMortgageAmountInThousands string `json:"firstMortgageAmountInThousands"`
 	HomeMarketValueTaxRecord       string `json:"homeMarketValueTaxRecord"`
 	ShortTermLiability             string `json:"shortTermLiability"`
-	NetWorth                       string `json:"netWorth"`
+	NetWorthRange                  string `json:"netWorthRange"`
 	WealthResources                string `json:"wealthResources"`
 	PaymentMethodCreditCard        string `json:"paymentMethodCreditCard"`
 }
@@ -42,7 +43,7 @@ type LocationInfo struct {
 }
 
 type FamilyInfo struct {
-	TotalAdults            int `json:"totalAdults"`
-	TotalChildren          int `json:"totalChildren"`
-	TotalPeopleInHousehold int `json:"totalPeopleInHousehold"`
+	TotalAdults            int    `json:"totalAdults"`
+	NumberOfChildren       string `json:"numberOfChildren"`
+	TotalPeopleInHousehold int    `json:"totalPeopleInHousehold"`
 }

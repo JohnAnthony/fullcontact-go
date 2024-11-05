@@ -25,13 +25,14 @@
     "household": {
       "familyInfo": {
         "totalAdults": 2,
-        "totalChildren": 1,
+        "numberOfChildren": "Less Than 3",
         "totalPeopleInHousehold": 3
       },
       "homeInfo": {
         "dwellingType": "Multi Family Dwelling/Apartment",
         "homeValueEstimate": 513,
-        "loanToValueEstimate": 4
+        "loanToValueEstimate": 4,
+        "ownerOrRenter": "O"
       },
       "locationInfo": {
         "seasonalAddress": true,
@@ -47,12 +48,12 @@
         "presenceOfChildren": "Y"
       },
       "finance" : {
-        "income" : "$30,000 - $39,999",
+        "householdIncomeEstimate" : "$30,000 - $39,999",
         "discretionarySpendingIncome" : "$65,000 - $74,999",
         "firstMortgageAmountInThousands" : "5147",
         "homeMarketValueTaxRecord" : "453",
         "shortTermLiability" : "$50,000 or more",
-        "netWorth" : "$150,000 - $249,999",
+        "netWorthRange" : "$150,000 - $249,999",
         "wealthResources" : "$250,000 - $499,999",
         "paymentMethodCreditCard" : "Y"
       }
@@ -63,6 +64,7 @@
         "range": "35-44",
         "value": 42
       },
+      "language": "English",
       "livingStatus": "Probable Homeowner",
       "maritalStatus": "MARRIED",
       "occupation": "Professional - Engineer/Industrial"
