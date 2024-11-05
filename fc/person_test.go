@@ -67,6 +67,7 @@ func TestPersonEnrich(t *testing.T) {
 
 	assert.Equal(t, "Probable Homeowner", response.Details.Demographics.LivingStatus)
 	assert.Equal(t, "Professional - Engineer/Industrial", response.Details.Demographics.Occupation)
+	assert.Equal(t, "English", response.Details.Demographics.Language)
 	assert.Equal(t, 145, response.Details.Census.BasicTractNumber)
 	assert.Equal(t, 2, response.Details.Census.BasicBlockGroup)
 	assert.Equal(t, "High School Diploma", response.Details.Census.Year2010.EducationLevel)
