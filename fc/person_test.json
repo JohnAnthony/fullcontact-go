@@ -52,7 +52,7 @@
         "firstMortgageAmountInThousands" : "5147",
         "homeMarketValueTaxRecord" : "453",
         "shortTermLiability" : "$50,000 or more",
-        "netWorth" : "$150,000 - $249,999",
+        "netWorthRange" : "$150,000 - $249,999",
         "wealthResources" : "$250,000 - $499,999",
         "paymentMethodCreditCard" : "Y"
       }

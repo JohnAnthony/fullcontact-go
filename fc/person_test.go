@@ -60,7 +60,7 @@ func TestPersonEnrich(t *testing.T) {
 	assert.Equal(t, "5147", response.Details.Household.Finance.FirstMortgageAmountInThousands)
 	assert.Equal(t, "453", response.Details.Household.Finance.HomeMarketValueTaxRecord)
 	assert.Equal(t, "$50,000 or more", response.Details.Household.Finance.ShortTermLiability)
-	assert.Equal(t, "$150,000 - $249,999", response.Details.Household.Finance.NetWorth)
+	assert.Equal(t, "$150,000 - $249,999", response.Details.Household.Finance.NetWorthRange)
 	assert.Equal(t, "$250,000 - $499,999", response.Details.Household.Finance.WealthResources)
 	assert.Equal(t, "Y", response.Details.Household.Finance.PaymentMethodCreditCard)
 

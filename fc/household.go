@@ -26,7 +26,7 @@ type Finance struct {
 	FirstMortgageAmountInThousands string `json:"firstMortgageAmountInThousands"`
 	HomeMarketValueTaxRecord       string `json:"homeMarketValueTaxRecord"`
 	ShortTermLiability             string `json:"shortTermLiability"`
-	NetWorth                       string `json:"netWorth"`
+	NetWorthRange                  string `json:"netWorthRange"`
 	WealthResources                string `json:"wealthResources"`
 	PaymentMethodCreditCard        string `json:"paymentMethodCreditCard"`
 }
